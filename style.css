@@ -12,9 +12,24 @@ html {
 }
 
 body {
-    background-color: #f1f5f9; /* Soft grayish-blue background */
-    color: #1e293b;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    color: #0f172a;
     line-height: 1.7;
+    position: relative;
+}
+
+body::before {
+    content: "Y.K Career Counselling";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-15deg);
+    font-size: 8vw;
+    font-weight: 800;
+    color: rgba(15, 23, 42, 0.03); /* Ekdum halka color jo peeche chipa rahega */
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: -1;
 }
 
 /* 2. Sleek Header & Navbar Layout */
