@@ -16,7 +16,7 @@ document.getElementById('contact-form')?.addEventListener('submit', function(eve
     };
 
     // Email bhejein (Naye account ka default template use kiya hai)
-    emailjs.send('service_xka831d', 'my_first_template', templateParams)
+    emailjs.send('service_xka831d', 'template_mwa1fnq', templateParams)
         .then(function() {
             alert('Message Sent Successfully! We will contact you soon.');
             document.getElementById('contact-form').reset();
