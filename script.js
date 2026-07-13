@@ -8,10 +8,19 @@ document.getElementById('contact-form')?.addEventListener('submit', function(eve
     const submitBtn = this.querySelector('button[type="submit"]');
     if (submitBtn) submitBtn.innerText = "Sending...";
 
+   // Mobile number validation aur extract karein
+    const phoneVal = document.getElementById('phone').value.trim();
+    if (phoneVal.length !== 10 || isNaN(phoneVal)) {
+        alert('Please enter a valid 10-digit mobile number.');
+        if (submitBtn) submitBtn.innerText = "Submit";
+        return;
+    }
+
     // Form ka data template variables ke sath map karein
     const templateParams = {
         from_name: document.getElementById('name').value,
         from_email: document.getElementById('email').value,
+        mobile_number: phoneVal,
         message: document.getElementById('message').value
     };
 
