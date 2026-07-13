@@ -1,5 +1,5 @@
 // EmailJS ko initialize karein
-emailjs.init("OviraX13Mq5-AHfoE");
+emailjs.init("3mLeRY38dR8VPt2Ba");
 
 document.getElementById('contact-form')?.addEventListener('submit', function(event) {
     event.preventDefault();
