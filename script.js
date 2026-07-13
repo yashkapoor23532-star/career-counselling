@@ -1,26 +1,29 @@
-// Welcome message
-console.log("Career Counselling Website Loaded");
+// EmailJS ko initialize karein
+emailjs.init("OviraX13Mq5-AHfoE");
 
-// Smooth scroll for internal links
-document.querySelectorAll('a[href^="#"]').forEach(link => {
-  link.addEventListener("click", function (e) {
-    e.preventDefault();
+document.getElementById('contact-form')?.addEventListener('submit', function(event) {
+    event.preventDefault();
 
-    const target = document.querySelector(this.getAttribute("href"));
+    // Submit button ko disable karein taaki user baar-baar click na kare
+    const submitBtn = this.querySelector('button[type="submit"]');
+    if (submitBtn) submitBtn.innerText = "Sending...";
 
-    if (target) {
-      target.scrollIntoView({
-        behavior: "smooth"
-      });
-    }
-  });
+    // Form ka data template variables ke sath map karein
+    const templateParams = {
+        from_name: document.getElementById('name').value,
+        from_email: document.getElementById('email').value,
+        message: document.getElementById('message').value
+    };
+
+    // Email bhejein (Naye account ka default template use kiya hai)
+    emailjs.send('service_xka831d', 'my_first_template', templateParams)
+        .then(function() {
+            alert('Message Sent Successfully! We will contact you soon.');
+            document.getElementById('contact-form').reset();
+            if (submitBtn) submitBtn.innerText = "Submit";
+        }, function(error) {
+            alert('Failed to send message. Please try again later.');
+            console.log('EmailJS Error:', error);
+            if (submitBtn) submitBtn.innerText = "Submit";
+        });
 });
-
-// Book button action
-const btn = document.querySelector("button");
-
-if (btn) {
-  btn.addEventListener("click", function () {
-    alert("Thank you! Our counsellor will contact you soon.");
-  });
-}
