@@ -4,89 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Career Counselling</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body style="font-family:Arial,sans-serif; margin:0; background:#f4f7fb;">
+<body>
 
-<header style="background:#0b5ed7; color:white; padding:20px; text-align:center;">
-    <h1>Career Counselling</h1>
-    <p>Helping Students Choose the Right Career</p>
-</header>
-    <nav style="background:#084298; padding:15px; text-align:center;">
-    <a href="#" style="color:white; text-decoration:none; margin:0 20px;">Home</a>
-    <a href="#" style="color:white; text-decoration:none; margin:0 20px;">About</a>
-    <a href="#" style="color:white; text-decoration:none; margin:0 20px;">Services</a>
-    <a href="#" style="color:white; text-decoration:none; margin:0 20px;">Contact</a>
-</nav>
-<main style="padding:30px;">
+    <header>
+        <h1>Career Counselling</h1>
+        <p>Helping Students Choose the Right Career</p>
+    </header>
 
-    <section style="background:white; padding:20px; border-radius:10px; margin-bottom:20px;">
-        <h2>About Career Counselling</h2>
-        <p>
-            Career counselling helps students identify their interests,
-            strengths, and career goals. It guides them in choosing the
-            right course and career path.
-        </p>
-    </section>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#welcome">Welcome</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-    <section style="background:white; padding:20px; border-radius:10px;">
-        <h2>Services We Offer</h2>
-        <ul>
-            <li>Career Guidance</li>
-            <li>College Selection</li>
-            <li>JEE & NEET Counselling</li>
-            <li>Skill Assessment</li>
-            <li>Study Planning</li>
-        </ul>
-    </section>
+    <!-- Main Container Layout Shuru -->
+    <div class="container">
 
-</main>
-<section style="padding:40px; text-align:center;">
-    <h2>Welcome</h2>
-    <p>
-        We provide expert career guidance, college admission counselling,
-        and personalized support for students and parents.
-    </p>
+        <section id="welcome" class="hero-text">
+            <h2>Welcome</h2>
+            <p>We provide expert career guidance, college admission counselling, and personalized support for students and parents.</p>
+            <button class="btn-primary">Book Free Counselling</button>
+        </section>
 
-    <button style="padding:12px 25px; background:#0b5ed7; color:white; border:none; border-radius:5px;">
-        Book Free Counselling
-    </button>
-</section>
+        <section id="about">
+            <h2>About Career Counselling</h2>
+            <p>Career counselling helps students identify their interests, strengths, and career goals. It guides them in choosing the right course and career path.</p>
+        </section>
 
-<section style="padding:30px;">
-    <h2>Our Services</h2>
-    <ul>
-        <li>Career Guidance</li>
-        <li>College Admission Support</li>
-        <li>Course Selection</li>
-        <li>Scholarship Guidance</li>
-    </ul>
-</section>
-<section style="padding:30px; background:white; margin:20px; border-radius:10px;">
-    <h2>Contact Us</h2>
+        <section id="services">
+            <h2>Services We Offer</h2>
+            <div class="services-grid">
+                <div class="service-card">Career Guidance</div>
+                <div class="service-card">College Selection</div>
+                <div class="service-card">JEE & NEET Counselling</div>
+                <div class="service-card">Skill Assessment</div>
+                <div class="service-card">Course Selection</div>
+                <div class="service-card">Scholarship Guidance</div>
+            </div>
+        </section>
 
-    <form>
-        <label>Name:</label><br>
-        <input type="text" placeholder="Enter your name"
-        style="width:100%; padding:10px; margin-bottom:10px;"><br>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" rows="5" placeholder="Enter your message" required></textarea>
+                </div>
+                
+                <button type="submit" class="btn-primary">Submit</button>
+            </form>
+        </section>
 
-        <label>Email:</label><br>
-        <input type="email" placeholder="Enter your email"
-        style="width:100%; padding:10px; margin-bottom:10px;"><br>
+    </div>
+    <!-- Main Container Layout Khatam -->
 
-        <label>Message:</label><br>
-        <textarea rows="5" placeholder="Enter your message"
-        style="width:100%; padding:10px; margin-bottom:10px;"></textarea><br>
+    <footer>
+        <p>&copy; 2026 Career Counselling. All Rights Reserved.</p>
+    </footer>
 
-        <button type="submit"
-        style="padding:10px 20px; background:#0b5ed7; color:white; border:none; border-radius:5px;">
-            Submit
-        </button>
-    </form>
-</section>
-<footer style="background:#0b5ed7; color:white; text-align:center; padding:15px; margin-top:20px;">
-    <p>&copy; 2026 Career Counselling. All Rights Reserved.</p>
-</footer>
-<script src="script.js"></script>
 </body>
 </html>
-
