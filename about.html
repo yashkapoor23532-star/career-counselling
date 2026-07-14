@@ -105,6 +105,27 @@
 <footer style="background: #0f172a; color: #94a3b8; text-align: center; padding: 30px 20px; margin-top: 40px;">
     <p style="color: white;">&copy; 2026 YK Career Counselling. All Rights Reserved.</p>
 </footer>
+<!-- Instant Page Loader Style and Script -->
+<div id="page-loader" style="display:none; position:fixed; top:0; left:0; width:100%; height:4px; background:linear-gradient(90deg, #3b82f6, #2563eb); z-index:99999; animation: loadingBar 2s infinite ease-in-out;"></div>
+<div id="loader-overlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(255,255,255,0.5); z-index:99998; cursor:wait;"></div>
 
+<style>
+@keyframes loadingBar {
+    0% { transform: translateX(-100%); }
+    50% { transform: translateX(0); }
+    100% { transform: translateX(100%); }
+}
+</style>
+
+<script>
+document.querySelectorAll('nav a, .btn-primary, a').forEach(link => {
+    if (link.getAttribute('href') && !link.getAttribute('href').startsWith('#') && !link.getAttribute('target')) {
+        link.addEventListener('click', function(e) {
+            document.getElementById('page-loader').style.display = 'block';
+            document.getElementById('loader-overlay').style.display = 'block';
+        });
+    }
+});
+</script>
 </body>
 </html>
