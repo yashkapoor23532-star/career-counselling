@@ -40,7 +40,6 @@
         nav { background: #0f172a; padding: 15px 0; text-align: center; }
         nav a { color: #94a3b8; text-decoration: none; font-weight: 500; margin: 0 15px; font-size: 0.95rem; }
         
-        /* Desktop Table Layout Utilities */
         .force-table { display: table !important; width: 100% !important; border-collapse: separate !important; border-spacing: 20px 0 !important; table-layout: fixed; }
         .force-cell-33 { display: table-cell !important; width: 33.333% !important; vertical-align: top !important; }
         .force-cell-50 { display: table-cell !important; width: 50% !important; vertical-align: top !important; }
@@ -53,7 +52,6 @@
         .service-tag { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 15px; margin: 8px; font-weight: 600; text-align: center; display: inline-block; width: 30%; }
         .btn-primary { background-color: #2563eb; color: white; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none; display: block; text-align: center; margin-top: 15px; }
 
-        /* Mobile Specific Style Overrides */
         @media (max-width: 768px) {
             .container { margin: 15px auto; }
             section { padding: 20px; margin-bottom: 20px; }
@@ -63,7 +61,6 @@
             nav { padding: 10px 5px; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
             nav a { margin: 0 5px; font-size: 0.85rem; }
             
-            /* Breaking tables into stack layout on mobile */
             .force-table { display: block !important; border-spacing: 0 !important; }
             .force-cell-33, .force-cell-50 { display: block !important; width: 100% !important; margin-bottom: 20px; }
             
@@ -72,7 +69,6 @@
             #stats .force-cell-33:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
         }
 
-        /* Floating WhatsApp Button Styles */
         .whatsapp-float {
             position: fixed;
             bottom: 30px;
@@ -96,14 +92,6 @@
             transform: scale(1.05);
             color: #fff;
         }
-        @media (max-width: 768px) {
-            .whatsapp-float {
-                bottom: 20px;
-                right: 20px;
-                padding: 10px 18px;
-                font-size: 0.9rem;
-            }
-        }
     </style>
 </head>
 <body>
@@ -113,7 +101,6 @@
     <p style="margin-top: 10px; font-size: 1.2rem; opacity: 0.9;">Empowering Parents with the Right Plan of Action for Student Growth</p>
 </header>
 
-<!-- Ultimate Clean Multi-Page Navigation -->
 <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -129,81 +116,12 @@
         <p style="font-size: 1.1rem; color: #475569; max-width: 750px; margin: 15px auto 25px auto;">
             We bridge the gap between school exam preparation and long-term foundation goals. Get direct expert intervention to structure your child's learning roadmap.
         </p>
-        <a href="contact.html" class="btn-primary" style="display: inline-block; padding: 12px 35px;">Book Strategic Consultation</a>
+        <a href="payment.html" class="btn-primary" style="display: inline-block; padding: 12px 35px;">Book Strategic Consultation</a>
     </section>
 
-    <section id="about">
-        <h2 style="font-size: 1.6rem; color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px;">Why Early Action Matters</h2>
-        <p style="font-size: 1.05rem; line-height: 1.7; color: #334155; margin-top: 15px;">
-            True career mapping begins early. By identifying specific academic strengths in Mathematics and Science during classes 6th to 10th, we eliminate confusion and lay down an unshakeable foundation for engineering, medical, and elite stream selections.
-        </p>
-    </section>
+    <!-- ... (baaki content same rahega) ... -->
 
-    <!-- Features Row -->
-    <section id="why-choose-us">
-        <h2 style="text-align: center; font-size: 1.6rem; color: #0f172a; margin-bottom: 25px;">Engineered for Real Results</h2>
-        <div class="force-table">
-            <div class="force-cell-33">
-                <div class="card-box">
-                    <div class="illustration-placeholder">
-                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-                    </div>
-                    <h3 style="color: #1e3a8a; font-size: 1.15rem;">Custom Plan of Action</h3>
-                    <p style="color: #475569; font-size: 0.9rem; margin-top: 8px;">No generic suggestions. Every student receives a precise, milestone-driven execution layout.</p>
-                </div>
-            </div>
-            <div class="force-cell-33">
-                <div class="card-box">
-                    <div class="illustration-placeholder">
-                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
-                    </div>
-                    <h3 style="color: #1e3a8a; font-size: 1.15rem;">Direct Parent Integration</h3>
-                    <p style="color: #475569; font-size: 0.9rem; margin-top: 8px;">We connect closely with parents because aligning family goals with academic reality guarantees success.</p>
-                </div>
-            </div>
-            <div class="force-cell-33">
-                <div class="card-box">
-                    <div class="illustration-placeholder">
-                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-                    </div>
-                    <h3 style="color: #1e3a8a; font-size: 1.15rem;">Budget Optimization</h3>
-                    <p style="color: #475569; font-size: 0.9rem; margin-top: 8px;">We analyze and match the absolute best tuition systems and learning platforms to your budget limits.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Stats Banner -->
-    <section id="stats" style="background: #0f172a; color: white; text-align: center;">
-        <div class="force-table" style="border-spacing: 0 !important;">
-            <div class="force-cell-33" style="padding: 10px;">
-                <div style="color: #3b82f6; font-size: 2.5rem; font-weight: 800;">500+</div>
-                <p style="color: #94a3b8; font-size: 0.95rem;">Students Guided</p>
-            </div>
-            <div class="force-cell-33" style="padding: 10px;">
-                <div style="color: #3b82f6; font-size: 2.5rem; font-weight: 800;">98%</div>
-                <p style="color: #94a3b8; font-size: 0.95rem;">Parent Satisfaction</p>
-            </div>
-            <div class="force-cell-33" style="padding: 10px;">
-                <div style="color: #3b82f6; font-size: 2.5rem; font-weight: 800;">50+</div>
-                <p style="color: #94a3b8; font-size: 0.95rem;">Platforms Audited</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="services">
-        <h2 style="text-align: center; font-size: 1.6rem; color: #0f172a; margin-bottom: 20px;">Core Domains We Audit</h2>
-        <div class="service-container">
-            <div class="service-tag">🧭 Early Career Mapping</div>
-            <div class="service-tag">🏛️ College Strategy</div>
-            <div class="service-tag">🎯 Competitive Guidance</div>
-            <div class="service-tag">📊 Strength Assessment</div>
-            <div class="service-tag">📚 Stream Matching</div>
-            <div class="service-tag">🎓 Fee & Admission Audit</div>
-        </div>
-    </section>
-
-    <!-- Programs / Pricing Row -->
+    <!-- Updated Pricing Section -->
     <section id="pricing">
         <h2 style="text-align: center; font-size: 1.6rem; color: #0f172a;">Strategic Guidance Programs</h2>
         <p style="text-align: center; color: #64748b; margin-bottom: 25px;">Select the dynamic engagement level that matches your academic requirements.</p>
@@ -218,7 +136,7 @@
                         <li style="margin-bottom: 10px;">✓ <b>Maths & Science Roadmap:</b> Subject developmental layout</li>
                         <li style="margin-bottom: 10px;">✓ <b>School vs Foundation:</b> Systems to balance regular exams</li>
                     </ul>
-                    <a href="contact.html" class="btn-primary" style="background: #475569;">Book Session</a>
+                    <a href="payment.html" class="btn-primary" style="background: #475569;">Book Session</a>
                 </div>
             </div>
             <div class="force-cell-50">
@@ -233,58 +151,15 @@
                         <li style="margin-bottom: 10px;">✓ <b>Best Coaching Selection:</b> Data optimization based on budget</li>
                         <li style="margin-bottom: 10px;">✓ <b>Regular Parent Alignment:</b> Long term performance tracking</li>
                     </ul>
-                    <a href="contact.html" class="btn-primary">Enquire Now</a>
+                    <a href="payment.html" class="btn-primary">Enquire Now</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials Row -->
-    <section id="testimonials">
-        <h2 style="text-align: center; font-size: 1.6rem; color: #0f172a; margin-bottom: 25px;">Feedback from Real Families</h2>
-        <div class="force-table">
-            <div class="force-cell-50">
-                <div class="card-box">
-                    <p style="font-style: italic; color: #475569; font-size: 0.95rem;">"The clarity we gained regarding when to opt for foundation courses completely changed our scheduling approach for classes 8 and 9."</p>
-                    <h4 style="margin-top: 15px; color: #1e293b; font-size: 0.95rem;">- Parent of Class 9 Student (Delhi)</h4>
-                </div>
-            </div>
-            <div class="force-cell-50">
-                <div class="card-box">
-                    <p style="font-style: italic; color: #475569; font-size: 0.95rem;">"Finding a balanced platform alignment within our strict yearly budget parameters would have been impossible without the comparative roadmap."</p>
-                    <h4 style="margin-top: 15px; color: #1e293b; font-size: 0.95rem;">- Parent of Class 7 Student (Mumbai)</h4>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="faq">
-        <h2 style="text-align: center; font-size: 1.6rem; color: #0f172a; margin-bottom: 20px;">Frequently Asked Questions</h2>
-        <div style="max-width: 900px; margin: 0 auto;">
-            <div style="background: #f8fafc; padding: 15px; border-radius: 8px; margin-bottom: 12px; border: 1px solid #e2e8f0;">
-                <p style="font-weight: 600; color: #1e3a8a;">Is a foundation course configuration optimal for students in classes 6th to 10th?</p>
-                <p style="margin-top: 5px; color: #475569; font-size: 0.95rem;">Balancing baseline performance parameters and analytical depth is essential. Early introduction to foundation methodology establishes key analytical capabilities for upcoming metrics like JEE, NEET, or competitive science assessments.</p>
-            </div>
-            <div style="background: #f8fafc; padding: 15px; border-radius: 8px; margin-bottom: 12px; border: 1px solid #e2e8f0;">
-                <p style="font-weight: 600; color: #1e3a8a;">Do you offer specialized tuition platform mapping services based on custom budgets?</p>
-                <p style="margin-top: 5px; color: #475569; font-size: 0.95rem;">Yes. We perform complete cost-benefit optimizations across leading digital systems and classic academic coaching structures to secure maximum value for your educational spending allocation.</p>
-            </div>
-        </div>
-    </section>
+    <!-- ... (Baaki code same rahega) ... -->
 
 </div>
-
-<footer style="background: #0f172a; color: #94a3b8; text-align: center; padding: 30px 20px; border-top: 1px solid #1e293b; margin-top: 40px;">
-    <p style="color: white; font-weight: 500;">&copy; 2026 YK Career Counselling. All Rights Reserved.</p>
-</footer>
-
-<!-- Floating WhatsApp Button -->
-<a href="https://wa.me/918679156709?text=Hi,%20I%20want%20to%20know%20more%20about%20career%20counselling." class="whatsapp-float" target="_blank">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397 0 11.973 0c3.184.001 6.177 1.239 8.426 3.49 2.249 2.251 3.486 5.246 3.485 8.432-.003 6.616-5.339 11.964-11.916 11.964-2.006-.001-3.974-.507-5.728-1.472L0 24zm6.59-4.846c1.62.963 3.398 1.47 5.225 1.471 5.519 0 10.01-4.464 10.012-9.957.001-2.662-1.033-5.164-2.91-7.044C17.047 1.743 14.55 .706 11.97 .706c-5.523 0-10.015 4.465-10.017 9.961-.001 1.84.48 3.639 1.391 5.234l-.993 3.626 3.706-.972zm12.115-4.992c-.303-.151-1.793-.884-2.071-.984-.278-.101-.48-.151-.68.151-.2.302-.776.984-.951 1.185-.175.201-.35.226-.653.075-1.522-.76-2.583-1.309-3.545-2.965-.254-.436.254-.405.727-1.347.08-.162.04-.302-.02-.453-.06-.151-.48-1.156-.657-1.583-.173-.415-.365-.359-.5-.365-.13-.006-.279-.007-.428-.007-.15 0-.395.056-.602.282-.207.226-.79.771-.79 1.881 0 1.11.807 2.183.918 2.334.112.151 1.588 2.426 3.847 3.399.537.232 1.02.391 1.369.502.54.172 1.03.148 1.418.09.432-.064 1.793-.734 2.046-1.443.254-.709.254-1.316.177-1.443-.075-.126-.278-.201-.581-.352z"/>
-    </svg>
-    Chat on WhatsApp
-</a>
 
 </body>
 </html>
