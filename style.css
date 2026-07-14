@@ -302,3 +302,80 @@ nav ul li.dropdown {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+/* 1. New Section: Why Choose Us Styling */
+#why-choose-us {
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.05);
+    text-align: center;
+}
+
+#why-choose-us h2 {
+    color: #0f172a;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.feature-card {
+    padding: 25px;
+    background: #f8fafc;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.1);
+    border-color: #2563eb;
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    margin-bottom: 10px;
+    color: #1e293b;
+}
+
+.feature-card p {
+    font-size: 0.9rem;
+    color: #64748b;
+}
+
+/* 2. Upgrade Services Grid Hover Effects */
+.service-card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    cursor: pointer;
+}
+
+.service-card:hover {
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%) !important;
+    color: white !important;
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+    border-color: transparent !important;
+}
+
+/* 3. Header Gradient Upgrade */
+header {
+    background: linear-gradient(-45deg, #1e3a8a, #2563eb, #1d4ed8, #0f172a) !important;
+    background-size: 400% 400% !important;
+    animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
