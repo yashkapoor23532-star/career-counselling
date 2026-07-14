@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://yashkapoor23532-star.github.io/career-counselling/sitemap.xml
