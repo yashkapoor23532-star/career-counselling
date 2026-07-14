@@ -40,16 +40,37 @@
         nav { background: #0f172a; padding: 15px 0; text-align: center; }
         nav a { color: #94a3b8; text-decoration: none; font-weight: 500; margin: 0 15px; font-size: 0.95rem; }
         
-        /* Inline force utilities */
-        .force-table { display: table !important; width: 100% !important; border-collapse: separate !important; border-spacing: 20px 0 !important; }
+        /* Desktop Table Layout Utilities */
+        .force-table { display: table !important; width: 100% !important; border-collapse: separate !important; border-spacing: 20px 0 !important; table-layout: fixed; }
         .force-cell-33 { display: table-cell !important; width: 33.333% !important; vertical-align: top !important; }
         .force-cell-50 { display: table-cell !important; width: 50% !important; vertical-align: top !important; }
         
         .card-box { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 25px; height: 100%; box-shadow: 0 2px 5px rgba(0,0,0,0.02); }
         .card-box.featured { border: 2px solid #2563eb; }
         .illustration-placeholder { background: #f8fafc; border-radius: 12px; height: 130px; text-align: center; padding-top: 35px; margin-bottom: 15px; border: 1px dashed #cbd5e1; }
+        
+        .service-container { text-align: center; }
         .service-tag { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 15px; margin: 8px; font-weight: 600; text-align: center; display: inline-block; width: 30%; }
         .btn-primary { background-color: #2563eb; color: white; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none; display: block; text-align: center; margin-top: 15px; }
+
+        /* Mobile Specific Style Overrides */
+        @media (max-width: 768px) {
+            .container { margin: 15px auto; }
+            section { padding: 20px; margin-bottom: 20px; }
+            header { padding: 40px 15px; }
+            header h1 { font-size: 2rem !important; }
+            header p { font-size: 1rem !important; }
+            nav { padding: 10px 5px; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+            nav a { margin: 0 5px; font-size: 0.85rem; }
+            
+            /* Breaking tables into stack layout on mobile */
+            .force-table { display: block !important; border-spacing: 0 !important; }
+            .force-cell-33, .force-cell-50 { display: block !important; width: 100% !important; margin-bottom: 20px; }
+            
+            .service-tag { width: 100% !important; margin: 5px 0 !important; }
+            #stats .force-cell-33 { margin-bottom: 15px; border-bottom: 1px solid #1e293b; padding-bottom: 15px; }
+            #stats .force-cell-33:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+        }
     </style>
 </head>
 <body>
@@ -62,6 +83,7 @@
 <nav>
     <a href="#welcome">Home</a>
     <a href="#about">About</a>
+    <a href="#why-choose-us">Why Us</a>
     <a href="#services">Services</a>
     <a href="#pricing">Programs</a>
     <a href="#faq">FAQ</a>
@@ -137,9 +159,9 @@
         </div>
     </section>
 
-    <section id="services" style="text-align: center;">
-        <h2 style="font-size: 1.6rem; color: #0f172a; margin-bottom: 20px;">Core Domains We Audit</h2>
-        <div>
+    <section id="services">
+        <h2 style="text-align: center; font-size: 1.6rem; color: #0f172a; margin-bottom: 20px;">Core Domains We Audit</h2>
+        <div class="service-container">
             <div class="service-tag">🧭 Early Career Mapping</div>
             <div class="service-tag">🏛️ College Strategy</div>
             <div class="service-tag">🎯 Competitive Guidance</div>
@@ -155,7 +177,7 @@
         <p style="text-align: center; color: #64748b; margin-bottom: 25px;">Select the dynamic engagement level that matches your academic requirements.</p>
         <div class="force-table" style="max-width: 960px; margin: 0 auto;">
             <div class="force-cell-50">
-                <div class="card-box" style="padding: 30px 20px;">
+                <div class="card-box" style="padding: 30px 20px; margin-bottom: 20px;">
                     <h3 style="font-size: 1.3rem; color: #0f172a; text-align: center;">1-on-1 Strategy Session</h3>
                     <div style="font-size: 2.4rem; font-weight: 800; color: #1e293b; text-align: center; margin: 15px 0;">₹200</div>
                     <p style="color: #64748b; text-align: center; font-size: 0.9rem; margin-bottom: 20px;">Dedicated Parent-Counsellor Call</p>
@@ -227,7 +249,7 @@
                 <div class="card-box" style="text-align: center;">
                     <div style="font-size: 2.2rem; margin-bottom: 10px;">📝</div>
                     <h3 style="color: #0f172a; font-size: 1.15rem;">Submit Information Profile</h3>
-                    <p style="color: #64748b; font-size: 0.9rem; margin-top: 5px;">Provide your details; our operational unit will respond within 24 hours.</p>
+                    <p style="color: #64748b; font-size: 0.9rem; margin-top: 5px;">Share your child's needs (Coaching, Stream, or Foundation) & get expert review within 24 hours.</p>
                     <p style="color: #2563eb; font-size: 0.8rem; font-weight: 600; margin: 10px 0;">⚡ Processing time: &lt; 2 mins</p>
                     <a href="https://forms.gle/j79rwyJzPrVPGFZG9" target="_blank" class="btn-primary" style="background-color: #1e293b;">Open Google Form</a>
                 </div>
