@@ -360,3 +360,43 @@ nav ul li.dropdown {
     color: #64748b;
     line-height: 1.5;
 }
+/* 1. Footer Design */
+footer {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 40px;
+    font-size: 0.95rem;
+}
+
+/* 2. Contact Form Visual Upgrade */
+#contact input, #contact textarea {
+    border: 1px solid #cbd5e1 !important;
+    border-radius: 8px !important;
+    padding: 12px !important;
+    transition: all 0.3s ease !important;
+}
+
+/* Input field par click karne par custom glowing effect */
+#contact input:focus, #contact textarea:focus {
+    border-color: #2563eb !important;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15) !important;
+    outline: none !important;
+}
+
+/* Submit button hover effect */
+#contact button[type="submit"] {
+    background: #2563eb !important;
+    border-radius: 8px !important;
+    padding: 12px 24px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+    cursor: pointer;
+}
+
+#contact button[type="submit"]:hover {
+    background: #1d4ed8 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
