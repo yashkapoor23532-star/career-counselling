@@ -8,7 +8,6 @@
     <meta name="keywords" content="coaching selector, early stage career mapping, stream selection expert, foundation course guide, budget friendly coaching consultant">
     <meta name="google-site-verification" content="7tFpTebhXeI4M1SiDAOpO1vkrUIH0CloJf9XcyL4" />
     <style>
-        /* Global Reset */
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
             background-color: #f1f5f9;
@@ -18,14 +17,11 @@
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
             line-height: 1.5;
         }
-        
-        /* Fixed Max Width Container */
         .container {
             width: 1140px;
             max-width: 95%;
             margin: 40px auto;
         }
-        
         section {
             background: rgba(255, 255, 255, 0.98);
             border-radius: 16px;
@@ -34,7 +30,6 @@
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
             border: 1px solid #e2e8f0;
         }
-
         header {
             background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #2563eb 100%);
             color: white;
@@ -42,84 +37,19 @@
             text-align: center;
             border-bottom: 4px solid #3b82f6;
         }
-
-        nav {
-            background: #0f172a;
-            padding: 15px 0;
-            text-align: center;
-        }
-        nav a {
-            color: #94a3b8;
-            text-decoration: none;
-            font-weight: 500;
-            margin: 0 15px;
-            font-size: 0.95rem;
-        }
-
-        /* HARD FORCED GRID VIA TRADITIONAL HTML TABLES (Forces horizontal layout in WeasyPrint) */
-        .grid-table {
-            width: 100%;
-            border-collapse: separate;
-            border-spacing: 20px 0;
-            margin: 20px 0;
-        }
-        .col-33 {
-            width: 33.333%;
-            vertical-align: top;
-        }
-        .col-50 {
-            width: 50%;
-            vertical-align: top;
-        }
-
-        /* Cards Internal Layout */
-        .card-box {
-            background: #ffffff;
-            border: 1px solid #e2e8f0;
-            border-radius: 12px;
-            padding: 25px;
-            height: 100%;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
-        }
-        .card-box.featured {
-            border: 2px solid #2563eb;
-            background: #ffffff;
-        }
-
-        .illustration-placeholder {
-            background: #f8fafc;
-            border-radius: 12px;
-            height: 130px;
-            text-align: center;
-            padding-top: 35px;
-            margin-bottom: 15px;
-            border: 1px dashed #cbd5e1;
-        }
-
-        .service-tag {
-            background: #f8fafc;
-            border: 1px solid #e2e8f0;
-            border-radius: 8px;
-            padding: 15px;
-            margin: 8px;
-            font-weight: 600;
-            text-align: center;
-            display: inline-block;
-            width: 30%;
-        }
-
-        .btn-primary {
-            background-color: #2563eb;
-            color: white;
-            padding: 12px 24px;
-            border-radius: 8px;
-            font-weight: 600;
-            text-decoration: none;
-            display: block;
-            text-align: center;
-            border: none;
-            margin-top: 15px;
-        }
+        nav { background: #0f172a; padding: 15px 0; text-align: center; }
+        nav a { color: #94a3b8; text-decoration: none; font-weight: 500; margin: 0 15px; font-size: 0.95rem; }
+        
+        /* Inline force utilities */
+        .force-table { display: table !important; width: 100% !important; border-collapse: separate !important; border-spacing: 20px 0 !important; }
+        .force-cell-33 { display: table-cell !important; width: 33.333% !important; vertical-align: top !important; }
+        .force-cell-50 { display: table-cell !important; width: 50% !important; vertical-align: top !important; }
+        
+        .card-box { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 25px; height: 100%; box-shadow: 0 2px 5px rgba(0,0,0,0.02); }
+        .card-box.featured { border: 2px solid #2563eb; }
+        .illustration-placeholder { background: #f8fafc; border-radius: 12px; height: 130px; text-align: center; padding-top: 35px; margin-bottom: 15px; border: 1px dashed #cbd5e1; }
+        .service-tag { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 15px; margin: 8px; font-weight: 600; text-align: center; display: inline-block; width: 30%; }
+        .btn-primary { background-color: #2563eb; color: white; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none; display: block; text-align: center; margin-top: 15px; }
     </style>
 </head>
 <body>
@@ -140,7 +70,6 @@
 
 <div class="container">
 
-    <!-- 1. Hero Welcome -->
     <section id="welcome" style="text-align: center; background: linear-gradient(180deg, #ffffff 0%, #f0fdf4 100%); border-left: 6px solid #22c55e;">
         <h2 style="font-size: 2.1rem; color: #0f172a;">Build a Certain Future for Your Child</h2>
         <p style="font-size: 1.1rem; color: #475569; max-width: 750px; margin: 15px auto 25px auto;">
@@ -149,7 +78,6 @@
         <a href="#contact" class="btn-primary" style="display: inline-block; padding: 12px 35px;">Book Strategic Consultation</a>
     </section>
 
-    <!-- 2. Core Value Strategy -->
     <section id="about">
         <h2 style="font-size: 1.6rem; color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px;">Why Early Action Matters</h2>
         <p style="font-size: 1.05rem; line-height: 1.7; color: #334155; margin-top: 15px;">
@@ -157,70 +85,61 @@
         </p>
     </section>
 
-    <!-- 3. Features Section (FORCED HORIZONTAL ROW VIA TABLE) -->
+    <!-- 3. Features Row (Hard Forced Layout) -->
     <section id="why-choose-us">
-        <h2 style="text-align: center; font-size: 1.6rem; color: #0f172a; margin-bottom: 10px;">Engineered for Real Results</h2>
-        
-        <table class="grid-table">
-            <tr>
-                <!-- Column 1 -->
-                <td class="col-33">
-                    <div class="card-box">
-                        <div class="illustration-placeholder">
-                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-                        </div>
-                        <h3 style="color: #1e3a8a; font-size: 1.15rem;">Custom Plan of Action</h3>
-                        <p style="color: #475569; font-size: 0.9rem; margin-top: 8px;">No generic suggestions. Every student receives a precise, milestone-driven execution layout.</p>
+        <h2 style="text-align: center; font-size: 1.6rem; color: #0f172a; margin-bottom: 25px;">Engineered for Real Results</h2>
+        <div class="force-table">
+            <div class="force-cell-33">
+                <div class="card-box">
+                    <div class="illustration-placeholder">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
                     </div>
-                </td>
-                <!-- Column 2 -->
-                <td class="col-33">
-                    <div class="card-box">
-                        <div class="illustration-placeholder">
-                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
-                        </div>
-                        <h3 style="color: #1e3a8a; font-size: 1.15rem;">Direct Parent Integration</h3>
-                        <p style="color: #475569; font-size: 0.9rem; margin-top: 8px;">We connect closely with parents because aligning family goals with academic reality guarantees success.</p>
+                    <h3 style="color: #1e3a8a; font-size: 1.15rem;">Custom Plan of Action</h3>
+                    <p style="color: #475569; font-size: 0.9rem; margin-top: 8px;">No generic suggestions. Every student receives a precise, milestone-driven execution layout.</p>
+                </div>
+            </div>
+            <div class="force-cell-33">
+                <div class="card-box">
+                    <div class="illustration-placeholder">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
                     </div>
-                </td>
-                <!-- Column 3 -->
-                <td class="col-33">
-                    <div class="card-box">
-                        <div class="illustration-placeholder">
-                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-                        </div>
-                        <h3 style="color: #1e3a8a; font-size: 1.15rem;">Budget Optimization</h3>
-                        <p style="color: #475569; font-size: 0.9rem; margin-top: 8px;">We analyze and match the absolute best tuition systems and learning platforms to your budget limits.</p>
+                    <h3 style="color: #1e3a8a; font-size: 1.15rem;">Direct Parent Integration</h3>
+                    <p style="color: #475569; font-size: 0.9rem; margin-top: 8px;">We connect closely with parents because aligning family goals with academic reality guarantees success.</p>
+                </div>
+            </div>
+            <div class="force-cell-33">
+                <div class="card-box">
+                    <div class="illustration-placeholder">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
                     </div>
-                </td>
-            </tr>
-        </table>
+                    <h3 style="color: #1e3a8a; font-size: 1.15rem;">Budget Optimization</h3>
+                    <p style="color: #475569; font-size: 0.9rem; margin-top: 8px;">We analyze and match the absolute best tuition systems and learning platforms to your budget limits.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Stats Banner -->
     <section id="stats" style="background: #0f172a; color: white; text-align: center;">
-        <table style="width: 100%; border-collapse: collapse;">
-            <tr>
-                <td style="width: 33.33%; padding: 10px;">
-                    <div style="color: #3b82f6; font-size: 2.5rem; font-weight: 800;">500+</div>
-                    <p style="color: #94a3b8; font-size: 0.95rem;">Students Guided</p>
-                </td>
-                <td style="width: 33.33%; padding: 10px;">
-                    <div style="color: #3b82f6; font-size: 2.5rem; font-weight: 800;">98%</div>
-                    <p style="color: #94a3b8; font-size: 0.95rem;">Parent Satisfaction</p>
-                </td>
-                <td style="width: 33.33%; padding: 10px;">
-                    <div style="color: #3b82f6; font-size: 2.5rem; font-weight: 800;">50+</div>
-                    <p style="color: #94a3b8; font-size: 0.95rem;">Platforms Audited</p>
-                </td>
-            </tr>
-        </table>
+        <div class="force-table" style="border-spacing: 0 !important;">
+            <div class="force-cell-33" style="padding: 10px;">
+                <div style="color: #3b82f6; font-size: 2.5rem; font-weight: 800;">500+</div>
+                <p style="color: #94a3b8; font-size: 0.95rem;">Students Guided</p>
+            </div>
+            <div class="force-cell-33" style="padding: 10px;">
+                <div style="color: #3b82f6; font-size: 2.5rem; font-weight: 800;">98%</div>
+                <p style="color: #94a3b8; font-size: 0.95rem;">Parent Satisfaction</p>
+            </div>
+            <div class="force-cell-33" style="padding: 10px;">
+                <div style="color: #3b82f6; font-size: 2.5rem; font-weight: 800;">50+</div>
+                <p style="color: #94a3b8; font-size: 0.95rem;">Platforms Audited</p>
+            </div>
+        </div>
     </section>
 
-    <!-- 4. Domains We Audit -->
     <section id="services" style="text-align: center;">
         <h2 style="font-size: 1.6rem; color: #0f172a; margin-bottom: 20px;">Core Domains We Audit</h2>
-        <div style="text-align: center;">
+        <div>
             <div class="service-tag">🧭 Early Career Mapping</div>
             <div class="service-tag">🏛️ College Strategy</div>
             <div class="service-tag">🎯 Competitive Guidance</div>
@@ -230,70 +149,61 @@
         </div>
     </section>
 
-    <!-- 5. Programs / Pricing (FORCED 2 COLUMNS SIDE-BY-SIDE VIA TABLE) -->
+    <!-- 5. Programs / Pricing Row (Hard Forced Layout) -->
     <section id="pricing">
         <h2 style="text-align: center; font-size: 1.6rem; color: #0f172a;">Strategic Guidance Programs</h2>
-        <p style="text-align: center; color: #64748b; margin-bottom: 20px;">Select the dynamic engagement level that matches your academic requirements.</p>
-        
-        <table class="grid-table" style="max-width: 960px; margin: 0 auto;">
-            <tr>
-                <!-- Program 1 -->
-                <td class="col-50">
-                    <div class="card-box" style="background: #ffffff; border: 1px solid #e2e8f0; padding: 30px 20px;">
-                        <h3 style="font-size: 1.3rem; color: #0f172a; text-align: center;">1-on-1 Strategy Session</h3>
-                        <div style="font-size: 2.4rem; font-weight: 800; color: #1e293b; text-align: center; margin: 15px 0;">₹200</div>
-                        <p style="color: #64748b; text-align: center; font-size: 0.9rem; margin-bottom: 20px;">Dedicated Parent-Counsellor Call</p>
-                        <ul style="list-style: none; color: #475569; font-size: 0.9rem; padding: 0 10px;">
-                            <li style="margin-bottom: 10px;">✓ <b>Parent-Counsellor Connect:</b> Deep-dive strategy call</li>
-                            <li style="margin-bottom: 10px;">✓ <b>Maths & Science Roadmap:</b> Subject developmental layout</li>
-                            <li style="margin-bottom: 10px;">✓ <b>School vs Foundation:</b> Systems to balance regular exams</li>
-                        </ul>
-                        <a href="#contact" class="btn-primary" style="background: #475569;">Book Session</a>
-                    </div>
-                </td>
-                
-                <!-- Program 2 -->
-                <td class="col-50">
-                    <div class="card-box featured" style="padding: 30px 20px; background: #ffffff;">
-                        <div style="text-align: center; margin-bottom: 5px;"><span style="background: #2563eb; color: white; font-size: 0.75rem; font-weight: 700; padding: 3px 10px; border-radius: 10px; text-transform: uppercase;">Most Popular</span></div>
-                        <h3 style="font-size: 1.3rem; color: #0f172a; text-align: center;">Complete Plan of Action</h3>
-                        <div style="font-size: 2.4rem; color: #2563eb; font-weight: 800; text-align: center; margin: 15px 0;">Starts at ₹999</div>
-                        <p style="color: #64748b; text-align: center; font-size: 0.9rem; margin-bottom: 20px;">End-to-End Future Growth Mentorship</p>
-                        <ul style="list-style: none; color: #475569; font-size: 0.9rem; padding: 0 10px;">
-                            <li style="margin-bottom: 10px;">✓ <b>Custom Future POA:</b> Comprehensive structural milestones</li>
-                            <li style="margin-bottom: 10px;">✓ <b>Advanced Assessment:</b> Diagnostics targeting core strengths</li>
-                            <li style="margin-bottom: 10px;">✓ <b>Best Coaching Selection:</b> Data optimization based on budget</li>
-                            <li style="margin-bottom: 10px;">✓ <b>Regular Parent Alignment:</b> Long term performance tracking</li>
-                        </ul>
-                        <a href="#contact" class="btn-primary">Enquire Now</a>
-                    </div>
-                </td>
-            </tr>
-        </table>
+        <p style="text-align: center; color: #64748b; margin-bottom: 25px;">Select the dynamic engagement level that matches your academic requirements.</p>
+        <div class="force-table" style="max-width: 960px; margin: 0 auto;">
+            <div class="force-cell-50">
+                <div class="card-box" style="padding: 30px 20px;">
+                    <h3 style="font-size: 1.3rem; color: #0f172a; text-align: center;">1-on-1 Strategy Session</h3>
+                    <div style="font-size: 2.4rem; font-weight: 800; color: #1e293b; text-align: center; margin: 15px 0;">₹200</div>
+                    <p style="color: #64748b; text-align: center; font-size: 0.9rem; margin-bottom: 20px;">Dedicated Parent-Counsellor Call</p>
+                    <ul style="list-style: none; color: #475569; font-size: 0.9rem; padding: 0 10px;">
+                        <li style="margin-bottom: 10px;">✓ <b>Parent-Counsellor Connect:</b> Deep-dive strategy call</li>
+                        <li style="margin-bottom: 10px;">✓ <b>Maths & Science Roadmap:</b> Subject developmental layout</li>
+                        <li style="margin-bottom: 10px;">✓ <b>School vs Foundation:</b> Systems to balance regular exams</li>
+                    </ul>
+                    <a href="#contact" class="btn-primary" style="background: #475569;">Book Session</a>
+                </div>
+            </div>
+            <div class="force-cell-50">
+                <div class="card-box featured" style="padding: 30px 20px; background: #ffffff;">
+                    <div style="text-align: center; margin-bottom: 5px;"><span style="background: #2563eb; color: white; font-size: 0.75rem; font-weight: 700; padding: 3px 10px; border-radius: 10px; text-transform: uppercase;">Most Popular</span></div>
+                    <h3 style="font-size: 1.3rem; color: #0f172a; text-align: center;">Complete Plan of Action</h3>
+                    <div style="font-size: 2.4rem; color: #2563eb; font-weight: 800; text-align: center; margin: 15px 0;">Starts at ₹999</div>
+                    <p style="color: #64748b; text-align: center; font-size: 0.9rem; margin-bottom: 20px;">End-to-End Future Growth Mentorship</p>
+                    <ul style="list-style: none; color: #475569; font-size: 0.9rem; padding: 0 10px;">
+                        <li style="margin-bottom: 10px;">✓ <b>Custom Future POA:</b> Comprehensive structural milestones</li>
+                        <li style="margin-bottom: 10px;">✓ <b>Advanced Assessment:</b> Diagnostics targeting core strengths</li>
+                        <li style="margin-bottom: 10px;">✓ <b>Best Coaching Selection:</b> Data optimization based on budget</li>
+                        <li style="margin-bottom: 10px;">✓ <b>Regular Parent Alignment:</b> Long term performance tracking</li>
+                    </ul>
+                    <a href="#contact" class="btn-primary">Enquire Now</a>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- 6. Testimonials (FORCED HORIZONTAL) -->
+    <!-- 6. Testimonials Row (Hard Forced Layout) -->
     <section id="testimonials">
-        <h2 style="text-align: center; font-size: 1.6rem; color: #0f172a; margin-bottom: 20px;">Feedback from Real Families</h2>
-        <table class="grid-table">
-            <tr>
-                <td class="col-50">
-                    <div class="card-box">
-                        <p style="font-style: italic; color: #475569; font-size: 0.95rem;">"The clarity we gained regarding when to opt for foundation courses completely changed our scheduling approach for classes 8 and 9."</p>
-                        <h4 style="margin-top: 15px; color: #1e293b; font-size: 0.95rem;">- Parent of Class 9 Student (Delhi)</h4>
-                    </div>
-                </td>
-                <td class="col-50">
-                    <div class="card-box">
-                        <p style="font-style: italic; color: #475569; font-size: 0.95rem;">"Finding a balanced platform alignment within our strict yearly budget parameters would have been impossible without the comparative roadmap."</p>
-                        <h4 style="margin-top: 15px; color: #1e293b; font-size: 0.95rem;">- Parent of Class 7 Student (Mumbai)</h4>
-                    </div>
-                </td>
-            </tr>
-        </table>
+        <h2 style="text-align: center; font-size: 1.6rem; color: #0f172a; margin-bottom: 25px;">Feedback from Real Families</h2>
+        <div class="force-table">
+            <div class="force-cell-50">
+                <div class="card-box">
+                    <p style="font-style: italic; color: #475569; font-size: 0.95rem;">"The clarity we gained regarding when to opt for foundation courses completely changed our scheduling approach for classes 8 and 9."</p>
+                    <h4 style="margin-top: 15px; color: #1e293b; font-size: 0.95rem;">- Parent of Class 9 Student (Delhi)</h4>
+                </div>
+            </div>
+            <div class="force-cell-50">
+                <div class="card-box">
+                    <p style="font-style: italic; color: #475569; font-size: 0.95rem;">"Finding a balanced platform alignment within our strict yearly budget parameters would have been impossible without the comparative roadmap."</p>
+                    <h4 style="margin-top: 15px; color: #1e293b; font-size: 0.95rem;">- Parent of Class 7 Student (Mumbai)</h4>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- 7. FAQ Section -->
     <section id="faq">
         <h2 style="text-align: center; font-size: 1.6rem; color: #0f172a; margin-bottom: 20px;">Frequently Asked Questions</h2>
         <div style="max-width: 900px; margin: 0 auto;">
@@ -308,33 +218,29 @@
         </div>
     </section>
 
-    <!-- 8. Contact Section (FORCED SIDE-BY-SIDE CONTACT METHODS VIA TABLE) -->
+    <!-- 8. Contact Row (Hard Forced Layout) -->
     <section id="contact" style="background: linear-gradient(180deg, #ffffff 0%, #eff6ff 100%); border-top: 4px solid #2563eb;">
         <h2 style="text-align: center; font-size: 1.6rem; color: #0f172a;">Initiate Strategic Academic Execution</h2>
-        <p style="text-align: center; color: #64748b; margin-bottom: 20px;">Complete the basic submission form below or open an active dialogue terminal directly via WhatsApp.</p>
-        
-        <table class="grid-table" style="max-width: 850px; margin: 0 auto;">
-            <tr>
-                <td class="col-50">
-                    <div class="card-box" style="text-align: center;">
-                        <div style="font-size: 2.2rem; margin-bottom: 10px;">📝</div>
-                        <h3 style="color: #0f172a; font-size: 1.15rem;">Submit Information Profile</h3>
-                        <p style="color: #64748b; font-size: 0.9rem; margin-top: 5px;">Provide your details; our operational unit will respond within 24 hours.</p>
-                        <p style="color: #2563eb; font-size: 0.8rem; font-weight: 600; margin: 10px 0;">⚡ Processing time: &lt; 2 mins</p>
-                        <a href="https://docs.google.com/forms/" target="_blank" class="btn-primary" style="background-color: #1e293b;">Open Google Form</a>
-                    </div>
-                </td>
-                <td class="col-50">
-                    <div class="card-box" style="text-align: center; border-color: #bfdbfe;">
-                        <div style="font-size: 2.2rem; margin-bottom: 10px;">💬</div>
-                        <h3 style="color: #0f172a; font-size: 1.15rem;">Instant WhatsApp Connection</h3>
-                        <p style="color: #64748b; font-size: 0.9rem; margin-top: 5px;">Skip processing wait times and connect immediately with our consultant workspace.</p>
-                        <p style="color: transparent; font-size: 0.8rem; margin: 10px 0;">Placeholder</p>
-                        <a href="https://wa.me/916397100566?text=Hi%20YK%20Career%20Counselling,%20I%20would%20like%20to%20discuss%20a%20personalized%20Plan%20of%20Action%20(POA)%20for%20my%20child's%20academic%20growth%20and%20foundation%20tracking.%20Please%20connect%20with%20me." target="_blank" class="btn-primary" style="background-color: #25d366;">Connect Now</a>
-                    </div>
-                </td>
-            </tr>
-        </table>
+        <p style="text-align: center; color: #64748b; margin-bottom: 25px;">Complete the basic submission form below or open an active dialogue terminal directly via WhatsApp.</p>
+        <div class="force-table" style="max-width: 850px; margin: 0 auto;">
+            <div class="force-cell-50">
+                <div class="card-box" style="text-align: center;">
+                    <div style="font-size: 2.2rem; margin-bottom: 10px;">📝</div>
+                    <h3 style="color: #0f172a; font-size: 1.15rem;">Submit Information Profile</h3>
+                    <p style="color: #64748b; font-size: 0.9rem; margin-top: 5px;">Provide your details; our operational unit will respond within 24 hours.</p>
+                    <p style="color: #2563eb; font-size: 0.8rem; font-weight: 600; margin: 10px 0;">⚡ Processing time: &lt; 2 mins</p>
+                    <a href="https://docs.google.com/forms/" target="_blank" class="btn-primary" style="background-color: #1e293b;">Open Google Form</a>
+                </div>
+            </div>
+            <div class="force-cell-50">
+                <div class="card-box" style="text-align: center; border-color: #bfdbfe;">
+                    <div style="font-size: 2.2rem; margin-bottom: 10px;">💬</div>
+                    <h3 style="color: #0f172a; font-size: 1.15rem;">Instant WhatsApp Connection</h3>
+                    <p style="color: #64748b; font-size: 0.9rem; margin-top: 5px; margin-bottom: 25px;">Skip processing wait times and connect immediately with our consultant workspace.</p>
+                    <a href="https://wa.me/916397100566?text=Hi%20YK%20Career%20Counselling,%20I%20would%20like%20to%20discuss%20a%20personalized%20Plan%20of%20Action%20(POA)%20for%20my%20child's%20academic%20growth%20and%20foundation%20tracking.%20Please%20connect%20with%20me." target="_blank" class="btn-primary" style="background-color: #25d366;">Connect Now</a>
+                </div>
+            </div>
+        </div>
     </section>
 
 </div>
