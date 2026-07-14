@@ -240,3 +240,65 @@ footer {
     box-shadow: 0 6px 20px rgba(37, 99, 235, 0.6);
     transform: translateY(-1px);
 }
+/* Navigation menu layout fix */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+/* Dropdown Container */
+nav ul li.dropdown {
+    position: relative;
+}
+
+/* Dropdown Menu (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 220px;
+    box-shadow: 0px 8px 24px rgba(15, 23, 42, 0.1);
+    border-radius: 8px;
+    padding: 10px 0;
+    margin-top: 10px;
+    z-index: 100;
+    text-align: left;
+    border: 1px solid #e2e8f0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Dropdown ke andar ke Links */
+.dropdown-content li {
+    display: block !important;
+    margin: 0 !important;
+}
+
+.dropdown-content a {
+    color: #1e293b !important;
+    padding: 12px 20px;
+    text-decoration: none;
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: background 0.2s ease;
+}
+
+/* Hover karne par text blue aur background gray */
+.dropdown-content a:hover {
+    background-color: #f1f5f9;
+    color: #2563eb !important;
+}
+
+/* Mouse le jaane par menu dikhane ke liye */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
