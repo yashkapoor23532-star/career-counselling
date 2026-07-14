@@ -10,24 +10,31 @@
     <link rel="stylesheet" href="style.css">
     <style>
         body {
-            background-color: #f8fafc;
+            background-color: #f1f5f9;
+            /* Unique grid background pattern for an engineering/architectural blueprint feel */
+            background-image: linear-gradient(#e2e8f0 1px, transparent 1px), linear-gradient(90deg, #e2e8f0 1px, transparent 1px);
+            background-size: 20px 20px;
             color: #1e293b;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
         }
         section {
-            background: #ffffff;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(8px);
             border-radius: 16px;
             padding: 40px;
             margin-bottom: 30px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
-            border: 1px solid #e2e8f0;
+            box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05), 0 2px 8px -1px rgba(0, 0, 0, 0.03);
+            border: 1px solid rgba(226, 232, 240, 0.8);
         }
         header {
-            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+            /* High-tech gradient layout with abstract subtle light streaks */
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #2563eb 100%);
             color: white;
-            padding: 60px 20px;
+            padding: 80px 20px;
             text-align: center;
             border-bottom: 4px solid #3b82f6;
+            position: relative;
+            overflow: hidden;
         }
         .btn-primary {
             background-color: #2563eb;
@@ -43,13 +50,23 @@
             background-color: #1d4ed8;
             transform: translateY(-1px);
         }
+        .illustration-box {
+            background: #f8fafc;
+            border-radius: 12px;
+            height: 140px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+            border: 1px dashed #cbd5e1;
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <h1 style="margin: 0; font-size: 2.5rem; font-weight: 800; letter-spacing: -0.05em;">YK Career Counselling</h1>
-    <p style="margin: 10px 0 0 0; font-size: 1.15rem; opacity: 0.9;">Empowering Parents with the Right Plan of Action for Student Growth</p>
+    <h1 style="margin: 0; font-size: 2.8rem; font-weight: 800; letter-spacing: -0.05em; text-shadow: 0 2px 10px rgba(0,0,0,0.3);">YK Career Counselling</h1>
+    <p style="margin: 15px 0 0 0; font-size: 1.25rem; opacity: 0.9; max-width: 600px; margin-inline: auto; line-height: 1.4;">Empowering Parents with the Right Plan of Action for Student Growth</p>
 </header>
 
 <nav>
@@ -76,59 +93,68 @@
 <div class="container" style="max-width: 1100px; margin: 40px auto; padding: 0 20px;">
 
     <!-- 1. Welcome Section -->
-    <section id="welcome" style="text-align: center; background: linear-gradient(180deg, #ffffff 0%, #f0fdf4 100%); border-left: 5px solid #22c55e;">
-        <h2 style="font-size: 2rem; color: #0f172a;">Build a Certain Future for Your Child</h2>
-        <p style="font-size: 1.1rem; color: #475569; max-width: 700px; margin: 15px auto 25px auto; line-height: 1.6;">
+    <section id="welcome" style="text-align: center; background: linear-gradient(180deg, rgba(255,255,255,0.95) 0%, rgba(240,253,244,0.95) 100%); border-left: 6px solid #22c55e;">
+        <h2 style="font-size: 2.2rem; color: #0f172a; font-weight: 700;">Build a Certain Future for Your Child</h2>
+        <p style="font-size: 1.15rem; color: #475569; max-width: 700px; margin: 15px auto 25px auto; line-height: 1.6;">
             We bridge the gap between school exam preparation and long-term foundation goals. Get direct expert intervention to structure your child's learning roadmap.
         </p>
-        <a href="#contact" class="btn-primary" style="text-decoration: none; display: inline-block;">Book Strategic Consultation</a>
+        <a href="#contact" class="btn-primary" style="text-decoration: none; display: inline-block; box-shadow: 0 4px 12px rgba(37,99,235,0.2);">Book Strategic Consultation</a>
     </section>
 
     <!-- 2. About Section -->
-    <section id="about">
-        <h2 style="font-size: 1.75rem; color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px;">Why Early Action Matters</h2>
-        <p style="font-size: 1.05rem; line-height: 1.7; color: #334155;">
-            True career mapping begins early. By identifying specific academic strengths in Mathematics and Science during classes 6th to 10th, we eliminate confusion and lay down an unshakeable foundation for engineering, medical, and elite stream selections.
-        </p>
+    <section id="about" style="position: relative; overflow: hidden;">
+        <div style="max-width: 700px;">
+            <h2 style="font-size: 1.75rem; color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px;">Why Early Action Matters</h2>
+            <p style="font-size: 1.05rem; line-height: 1.7; color: #334155; margin-top: 15px;">
+                True career mapping begins early. By identifying specific academic strengths in Mathematics and Science during classes 6th to 10th, we eliminate confusion and lay down an unshakeable foundation for engineering, medical, and elite stream selections.
+            </p>
+        </div>
     </section>
 
-    <!-- 3. Why Choose Us Section -->
-    <section id="why-choose-us" style="background: #fafafa;">
-        <h2 style="text-align: center; font-size: 1.75rem; color: #0f172a; margin-bottom: 30px;">Engineered for Real Results</h2>
+    <!-- 3. Why Choose Us Section with Unique Graphic Elements -->
+    <section id="why-choose-us" style="background: rgba(250, 250, 250, 0.95);">
+        <h2 style="text-align: center; font-size: 1.75rem; color: #0f172a; margin-bottom: 35px;">Engineered for Real Results</h2>
         <div class="features-grid">
-            <div class="feature-card" style="background: white; padding: 25px; border-radius: 12px; border: 1px solid #e2e8f0;">
-                <div class="feature-icon" style="font-size: 2rem; margin-bottom: 10px;">🎓</div>
-                <h3 style="color: #1e3a8a;">Custom Plan of Action</h3>
-                <p style="color: #475569;">No generic suggestions. Every student receives a precise, milestone-driven execution layout.</p>
+            <div class="feature-card" style="background: white; padding: 25px; border-radius: 12px; border: 1px solid #e2e8f0; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
+                <div class="illustration-box">
+                    <!-- Clean Vector/SVG style imagery placeholder that draws a modern blueprint path -->
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                </div>
+                <h3 style="color: #1e3a8a; margin-top: 10px;">Custom Plan of Action</h3>
+                <p style="color: #475569; font-size: 0.95rem; line-height: 1.5;">No generic suggestions. Every student receives a precise, milestone-driven execution layout.</p>
             </div>
-            <div class="feature-card" style="background: white; padding: 25px; border-radius: 12px; border: 1px solid #e2e8f0;">
-                <div class="feature-icon" style="font-size: 2rem; margin-bottom: 10px;">🎯</div>
-                <h3 style="color: #1e3a8a;">Direct Parent Integration</h3>
-                <p style="color: #475569;">We connect closely with parents because aligning family goals with academic reality guarantees success.</p>
+            <div class="feature-card" style="background: white; padding: 25px; border-radius: 12px; border: 1px solid #e2e8f0; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
+                <div class="illustration-box">
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </div>
+                <h3 style="color: #1e3a8a; margin-top: 10px;">Direct Parent Integration</h3>
+                <p style="color: #475569; font-size: 0.95rem; line-height: 1.5;">We connect closely with parents because aligning family goals with academic reality guarantees success.</p>
             </div>
-            <div class="feature-card" style="background: white; padding: 25px; border-radius: 12px; border: 1px solid #e2e8f0;">
-                <div class="feature-icon" style="font-size: 2rem; margin-bottom: 10px;">🚀</div>
-                <h3 style="color: #1e3a8a;">Budget Optimization</h3>
-                <p style="color: #475569;">We analyze and match the absolute best tuition systems and learning platforms to your budget limits.</p>
+            <div class="feature-card" style="background: white; padding: 25px; border-radius: 12px; border: 1px solid #e2e8f0; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
+                <div class="illustration-box">
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                </div>
+                <h3 style="color: #1e3a8a; margin-top: 10px;">Budget Optimization</h3>
+                <p style="color: #475569; font-size: 0.95rem; line-height: 1.5;">We analyze and match the absolute best tuition systems and learning platforms to your budget limits.</p>
             </div>
         </div>
     </section>
 
     <!-- Track Record/Counters Section -->
-    <section id="stats" style="text-align: center; background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); color: white;">
-        <h2 style="margin-bottom: 30px; font-size: 1.75rem;">Verified Academic Impact</h2>
+    <section id="stats" style="text-align: center; background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: white;">
+        <h2 style="margin-bottom: 30px; font-size: 1.75rem; font-weight: 700;">Verified Academic Impact</h2>
         <div class="stats-grid">
             <div class="stats-card">
-                <div class="stats-number" style="color: #3b82f6; font-size: 2.5rem; font-weight: 800;">500+</div>
-                <p style="font-weight: 500; color: #94a3b8;">Students Guided Successfully</p>
+                <div class="stats-number" style="color: #3b82f6; font-size: 2.8rem; font-weight: 800;">500+</div>
+                <p style="font-weight: 500; color: #94a3b8; margin-top: 5px;">Students Guided Successfully</p>
             </div>
             <div class="stats-card">
-                <div class="stats-number" style="color: #3b82f6; font-size: 2.5rem; font-weight: 800;">98%</div>
-                <p style="font-weight: 500; color: #94a3b8;">Parent Satisfaction Rate</p>
+                <div class="stats-number" style="color: #3b82f6; font-size: 2.8rem; font-weight: 800;">98%</div>
+                <p style="font-weight: 500; color: #94a3b8; margin-top: 5px;">Parent Satisfaction Rate</p>
             </div>
             <div class="stats-card">
-                <div class="stats-number" style="color: #3b82f6; font-size: 2.5rem; font-weight: 800;">50+</div>
-                <p style="font-weight: 500; color: #94a3b8;">Top Learning Platforms Linked</p>
+                <div class="stats-number" style="color: #3b82f6; font-size: 2.8rem; font-weight: 800;">50+</div>
+                <p style="font-weight: 500; color: #94a3b8; margin-top: 5px;">Top Learning Platforms Linked</p>
             </div>
         </div>
     </section>
@@ -137,55 +163,55 @@
     <section id="services">
         <h2 style="text-align: center; font-size: 1.75rem; color: #0f172a; margin-bottom: 30px;">Core Domains We Audit</h2>
         <div class="services-grid">
-            <div class="service-card" style="font-weight: 600;">🧭 Early Career Mapping</div>
-            <div class="service-card" style="font-weight: 600;">🏛️ College Strategy</div>
-            <div class="service-card" style="font-weight: 600;">🎯 Competitive Guidance</div>
-            <div class="service-card" style="font-weight: 600;">📊 Strength Assessment</div>
-            <div class="service-card" style="font-weight: 600;">📚 Stream Matching</div>
-            <div class="service-card" style="font-weight: 600;">🎓 Fee & Admission Audit</div>
+            <div class="service-card" style="font-weight: 600; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 15px;">🧭 Early Career Mapping</div>
+            <div class="service-card" style="font-weight: 600; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 15px;">🏛️ College Strategy</div>
+            <div class="service-card" style="font-weight: 600; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 15px;">🎯 Competitive Guidance</div>
+            <div class="service-card" style="font-weight: 600; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 15px;">📊 Strength Assessment</div>
+            <div class="service-card" style="font-weight: 600; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 15px;">📚 Stream Matching</div>
+            <div class="service-card" style="font-weight: 600; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 15px;">🎓 Fee & Admission Audit</div>
         </div>
     </section>
 
     <!-- 5. Pricing & Programs Section -->
     <section id="pricing" style="text-align: center;">
-        <h2 style="font-size: 1.75rem; color: #0f172a;">Strategic Guidance Programs</h2>
+        <h2 style="font-size: 1.75rem; color: #0f172a; font-weight: 700;">Strategic Guidance Programs</h2>
         <p style="color: #64748b; margin-bottom: 35px;">Select the dynamic engagement level that matches your current academic planning requirements.</p>
         <div class="pricing-grid">
             
             <!-- Card 1: 1-on-1 Strategy Session -->
-            <div class="pricing-card" style="border: 1px solid #e2e8f0; background: #ffffff;">
-                <h3>1-on-1 Strategy Session</h3>
-                <div class="price">₹200</div>
-                <p style="color: #64748b; margin-bottom: 20px;">Dedicated Parent-Counsellor Call</p>
+            <div class="pricing-card" style="border: 1px solid #e2e8f0; background: #ffffff; border-radius: 14px; box-shadow: 0 4px 6px rgba(0,0,0,0.02);">
+                <h3 style="font-size: 1.4rem; color: #0f172a;">1-on-1 Strategy Session</h3>
+                <div class="price" style="font-size: 2.5rem; font-weight: 800; color: #1e293b; margin: 15px 0;">₹200</div>
+                <p style="color: #64748b; margin-bottom: 20px; font-weight: 500;">Dedicated Parent-Counsellor Call</p>
                 <ul style="list-style: none; text-align: left; margin-bottom: 25px; color: #475569; padding: 0 10px;">
-                    <li style="margin-bottom: 12px;">✓ <b>Parent-Counsellor Connect:</b> Direct deep-dive call with parents</li>
-                    <li style="margin-bottom: 12px;">✓ <b>Maths & Science Roadmap:</b> Subject-wise growth plan for the student</li>
-                    <li style="margin-bottom: 12px;">✓ <b>School vs Foundation:</b> Strategy to balance school exams & competitive edge</li>
+                    <li style="margin-bottom: 12px; line-height: 1.5;">✓ <b>Parent-Counsellor Connect:</b> Direct deep-dive call with parents</li>
+                    <li style="margin-bottom: 12px; line-height: 1.5;">✓ <b>Maths & Science Roadmap:</b> Subject-wise growth plan for the student</li>
+                    <li style="margin-bottom: 12px; line-height: 1.5;">✓ <b>School vs Foundation:</b> Strategy to balance school exams & competitive edge</li>
                 </ul>
                 <a href="#contact" class="btn-primary" style="text-decoration: none; display: block; background: #475569;">Book Session</a>
             </div>
             
             <!-- Card 2: Complete Plan of Action -->
-            <div class="pricing-card featured" style="border: 2px solid #2563eb; background: #ffffff; position: relative;">
-                <div class="pricing-badge" style="background: #2563eb; color: white;">Most Popular</div>
-                <h3>Complete Plan of Action</h3>
-                <div class="price" style="font-size: 2.2rem; color: #2563eb;">Starts at ₹999</div>
-                <p style="color: #64748b; margin-bottom: 20px;">End-to-End Future Growth Mentorship</p>
+            <div class="pricing-card featured" style="border: 2px solid #2563eb; background: #ffffff; border-radius: 14px; position: relative; box-shadow: 0 10px 25px -5px rgba(37,99,235,0.15);">
+                <div class="pricing-badge" style="background: #2563eb; color: white; font-size: 0.8rem; font-weight: 700; text-transform: uppercase;">Most Popular</div>
+                <h3 style="font-size: 1.4rem; color: #0f172a;">Complete Plan of Action</h3>
+                <div class="price" style="font-size: 2.2rem; color: #2563eb; font-weight: 800; margin: 15px 0;">Starts at ₹999</div>
+                <p style="color: #64748b; margin-bottom: 20px; font-weight: 500;">End-to-End Future Growth Mentorship</p>
                 <ul style="list-style: none; text-align: left; margin-bottom: 25px; color: #475569; padding: 0 10px;">
-                    <li style="margin-bottom: 12px;">✓ <b>Custom Future POA:</b> Step-by-step career path and growth execution plan</li>
-                    <li style="margin-bottom: 12px;">✓ <b>Advanced Skill Assessment:</b> Mapping student's core strength & interests</li>
-                    <li style="margin-bottom: 12px;">✓ <b>Best Coaching/Platform Selection:</b> Budget-friendly right institute mapping</li>
-                    <li style="margin-bottom: 12px;">✓ <b>Regular Parent Alignment:</b> Continuous support to track student academic growth</li>
+                    <li style="margin-bottom: 12px; line-height: 1.5;">✓ <b>Custom Future POA:</b> Step-by-step career path and growth execution plan</li>
+                    <li style="margin-bottom: 12px; line-height: 1.5;">✓ <b>Advanced Skill Assessment:</b> Mapping student's core strength & interests</li>
+                    <li style="margin-bottom: 12px; line-height: 1.5;">✓ <b>Best Coaching/Platform Selection:</b> Budget-friendly right institute mapping</li>
+                    <li style="margin-bottom: 12px; line-height: 1.5;">✓ <b>Regular Parent Alignment:</b> Continuous support to track student academic growth</li>
                 </ul>
-                <a href="#contact" class="btn-primary" style="text-decoration: none; display: block;">Enquire Now</a>
+                <a href="#contact" class="btn-primary" style="text-decoration: none; display: block; box-shadow: 0 4px 12px rgba(37,99,235,0.25);">Enquire Now</a>
             </div>
             
         </div>
     </section>
 
     <!-- 6. Student Testimonials -->
-    <section id="testimonials" style="text-align: center; background: #fdfdfd;">
-        <h2 style="font-size: 1.75rem; color: #0f172a; margin-bottom: 30px;">Feedback from Real Families</h2>
+    <section id="testimonials" style="text-align: center; background: rgba(253, 253, 253, 0.95);">
+        <h2 style="font-size: 1.75rem; color: #0f172a; margin-bottom: 30px; font-weight: 700;">Feedback from Real Families</h2>
         <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between;">
             <div style="flex: 1; min-width: 280px; background: #ffffff; padding: 25px; border-radius: 12px; border: 1px solid #e2e8f0; text-align: left; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
                 <p style="font-style: italic; color: #475569; font-size: 0.95rem; line-height: 1.6;">"The clarity we gained regarding when to opt for foundation courses completely changed our scheduling approach for classes 8 and 9."</p>
@@ -200,7 +226,7 @@
 
     <!-- 7. FAQ Section -->
     <section id="faq" style="text-align: center;">
-        <h2 style="font-size: 1.75rem; color: #0f172a; margin-bottom: 30px;">Frequently Asked Questions</h2>
+        <h2 style="font-size: 1.75rem; color: #0f172a; margin-bottom: 30px; font-weight: 700;">Frequently Asked Questions</h2>
         <div class="faq-container" style="text-align: left; max-width: 850px; margin: 0 auto;">
             <details class="faq-item" style="background: #f8fafc; padding: 15px; border-radius: 8px; margin-bottom: 12px; border: 1px solid #e2e8f0;">
                 <summary style="font-weight: 600; cursor: pointer; color: #1e3a8a;">Is a foundation course configuration optimal for students in classes 6th to 10th?</summary>
@@ -225,7 +251,7 @@
 
     <!-- 8. Contact Section -->
     <section id="contact" style="text-align: center; background: linear-gradient(180deg, #ffffff 0%, #eff6ff 100%); border-top: 4px solid #2563eb;">
-        <h2 style="font-size: 1.75rem; color: #0f172a;">Initiate Strategic Academic Execution</h2>
+        <h2 style="font-size: 1.75rem; color: #0f172a; font-weight: 700;">Initiate Strategic Academic Execution</h2>
         <p style="color: #64748b; margin-bottom: 35px;">Complete the basic submission form below or open an active dialogue terminal directly via WhatsApp.</p>
         
         <div style="display: flex; flex-wrap: wrap; gap: 25px; justify-content: center;">
@@ -243,7 +269,7 @@
                 <div style="font-size: 2.5rem; margin-bottom: 15px;">💬</div>
                 <h3 style="color: #0f172a;">Instant WhatsApp Connection</h3>
                 <p style="color: #64748b; margin-bottom: 20px; font-size: 0.95rem;">Skip processing wait times and connect immediately with our consultant workspace.</p>
-                <a href="https://wa.me/916397100566?text=Hi%20YK%20Career%20Counselling,%20I%20would%20like%20to%20discuss%20a%20personalized%20Plan%20of%20Action%20(POA)%20for%20my%20child's%20academic%20growth%20and%20foundation%20tracking.%20Please%20connect%20with%20me." target="_blank" class="btn-primary" style="text-decoration: none; display: inline-block; background-color: #25d366;">Connect Now</a>
+                <a href="https://wa.me/916397100566?text=Hi%20YK%20Career%20Counselling,%20I%20would%20like%20to%20discuss%20a%20personalized%20Plan%20of%20Action%20(POA)%20for%20my%20child's%20academic%20growth%20and%20foundation%20tracking.%20Please%20connect%20with%20me." target="_blank" class="btn-primary" style="text-decoration: none; display: inline-block; background-color: #25d366; box-shadow: 0 4px 12px rgba(37,211,102,0.2);">Connect Now</a>
             </div>
         </div>
     </section>
@@ -253,7 +279,7 @@
 <!-- Floating WhatsApp Button (Optimized Link) -->
 <a href="https://wa.me/916397100566?text=Hi%20YK%20Career%20Counselling,%20I%20would%20like%20to%20discuss%20a%20personalized%20Plan%20of%20Action%20(POA)%20for%20my%20child's%20academic%20growth%20and%20foundation%20tracking.%20Please%20connect%20with%20me." class="whatsapp-btn" target="_blank" aria-label="Chat on WhatsApp">
     <svg viewBox="0 0 32 32">
-        <path d="M16 2a14 14 0 0 0-12.14 21L2 29.5l6.73-1.76A14 14 0 1 0 16 2zm7.62 19.82c-.32.9-1.6 1.76-2.22 1.85-.56.08-1.29.13-3.66-.84a16.52 16.52 0 0 1-6.26-5.51c-.84-1.12-1.34-2.43-1.34-3.78a4 4 0 0 1 1.25-3c.27-.26.56-.33.74-.33h.53c.17 0 .4.06.6.53l1.18 2.86c.07.15.12.33.02.52-.1.2-.15.32-.3.49-.15.17-.32.39-.46.53-.16.15-.33.32-.14.65a10.23 10.23 0 0 0 1.88 2.33 9 9 0 0 0 2.72 1.68c.33.16.53.14.72-.08.2-.22.84-.98 1.07-1.32.22-.34.45-.28.75-.17l2.94 1.38c.3.15.5.22.58.35.07.13.07.76-.25 1.66z"/>
+        <path d="M16 2a14 14 0 0 0-12.14 21L2 29.5l6.73-1.76A14 14 0 1 0 16 2zm7.62 19.82c-.32.9-1.6 1.76-2.22 1.85-.56.08-1.29.13-3.66-.84a16.52 16.52 0 0 1-6.26-5.51c-.84-1.12-1.34-2.43-1.34-3.78a4 4 0 0 1 1.25-3.5.74.74 0 0 1 .74-.33h.53c.17 0 .4.06.6.53l1.18 2.86c.07.15.12.33.02.52-.1.2-.15.32-.3.49-.15.17-.32.39-.46.53-.16.15-.33.32-.14.65a10.23 10.23 0 0 0 1.88 2.33 9 9 0 0 0 2.72 1.68c.33.16.53.14.72-.08.2-.22.84-.98 1.07-1.32.22-.34.45-.28.75-.17l2.94 1.38c.3.15.5.22.58.35.07.13.07.76-.25 1.66z"/>
     </svg>
 </a>
 
