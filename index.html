@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YK Career Counselling | Best Coaching Selector & Stream Mapping</title>
-    <meta name="description" content="Class 6th-10th stream mapping, foundation course guidance, and expert assistance in selecting the right coaching platform suited to your budget.">
-    <meta name="keywords" content="coaching selector, early stage career mapping, stream selection expert, foundation course guide, budget friendly coaching consultant">
-    <meta name="google-site-verification" content="7tFpTebhXeI4M1SiDAOpO1vkrUIH0CloJf9XcyL4" />
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
@@ -17,88 +14,44 @@
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
             line-height: 1.5;
         }
-        .container {
-            width: 1140px;
-            max-width: 95%;
-            margin: 40px auto;
-        }
-        section {
-            background: rgba(255, 255, 255, 0.98);
-            border-radius: 16px;
-            padding: 40px;
-            margin-bottom: 35px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
-            border: 1px solid #e2e8f0;
-        }
-        header {
-            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #2563eb 100%);
-            color: white;
-            padding: 70px 20px;
-            text-align: center;
-            border-bottom: 4px solid #3b82f6;
-        }
-        nav { background: #0f172a; padding: 15px 0; text-align: center; }
-        nav a { color: #94a3b8; text-decoration: none; font-weight: 500; margin: 0 15px; font-size: 0.95rem; }
+        .container { width: 1140px; max-width: 95%; margin: 40px auto; }
+        header { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #2563eb 100%); color: white; padding: 70px 20px; text-align: center; border-bottom: 4px solid #3b82f6; }
         
-        .force-table { display: table !important; width: 100% !important; border-collapse: separate !important; border-spacing: 20px 0 !important; table-layout: fixed; }
-        .force-cell-33 { display: table-cell !important; width: 33.333% !important; vertical-align: top !important; }
-        .force-cell-50 { display: table-cell !important; width: 50% !important; vertical-align: top !important; }
-        
-        .card-box { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 25px; height: 100%; box-shadow: 0 2px 5px rgba(0,0,0,0.02); }
-        .card-box.featured { border: 2px solid #2563eb; }
-        .illustration-placeholder { background: #f8fafc; border-radius: 12px; height: 130px; text-align: center; padding-top: 35px; margin-bottom: 15px; border: 1px dashed #cbd5e1; }
-        
-        .service-container { text-align: center; }
-        .service-tag { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 15px; margin: 8px; font-weight: 600; text-align: center; display: inline-block; width: 30%; }
+        /* Fixed Nav */
+        nav { 
+            background: #0f172a; 
+            padding: 15px 0; 
+            text-align: center; 
+            display: flex; 
+            justify-content: center; 
+            flex-wrap: wrap; 
+            gap: 20px; 
+        }
+        nav a { 
+            color: #ffffff; 
+            text-decoration: none; 
+            font-weight: 600; 
+            font-size: 1rem; 
+            padding: 5px 10px; 
+        }
+
+        section { background: rgba(255, 255, 255, 0.98); border-radius: 16px; padding: 40px; margin-bottom: 35px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04); border: 1px solid #e2e8f0; }
+        .force-table { display: table; width: 100%; border-spacing: 20px 0; table-layout: fixed; }
+        .force-cell-50 { display: table-cell; width: 50%; vertical-align: top; }
+        .card-box { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 25px; height: 100%; }
         .btn-primary { background-color: #2563eb; color: white; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none; display: block; text-align: center; margin-top: 15px; }
-
+        
         @media (max-width: 768px) {
-            .container { margin: 15px auto; }
-            section { padding: 20px; margin-bottom: 20px; }
-            header { padding: 40px 15px; }
-            header h1 { font-size: 2rem !important; }
-            header p { font-size: 1rem !important; }
-            nav { padding: 10px 5px; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
-            nav a { margin: 0 5px; font-size: 0.85rem; }
-            
-            .force-table { display: block !important; border-spacing: 0 !important; }
-            .force-cell-33, .force-cell-50 { display: block !important; width: 100% !important; margin-bottom: 20px; }
-            
-            .service-tag { width: 100% !important; margin: 5px 0 !important; }
-            #stats .force-cell-33 { margin-bottom: 15px; border-bottom: 1px solid #1e293b; padding-bottom: 15px; }
-            #stats .force-cell-33:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
-        }
-
-        .whatsapp-float {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            background-color: #25d366;
-            color: #fff;
-            border-radius: 50px;
-            text-align: center;
-            padding: 12px 24px;
-            font-weight: bold;
-            text-decoration: none;
-            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
-            z-index: 1000;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 1rem;
-            transition: transform 0.3s ease;
-        }
-        .whatsapp-float:hover {
-            transform: scale(1.05);
-            color: #fff;
+            .force-table { display: block; }
+            .force-cell-50 { display: block; width: 100%; margin-bottom: 20px; }
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1 style="font-size: 2.6rem; font-weight: 800; letter-spacing: -0.04em;">YK Career Counselling</h1>
-    <p style="margin-top: 10px; font-size: 1.2rem; opacity: 0.9;">Empowering Parents with the Right Plan of Action for Student Growth</p>
+    <h1>YK Career Counselling</h1>
+    <p>Empowering Parents with the Right Plan of Action</p>
 </header>
 
 <nav>
@@ -110,55 +63,30 @@
 </nav>
 
 <div class="container">
-
-    <section id="welcome" style="text-align: center; background: linear-gradient(180deg, #ffffff 0%, #f0fdf4 100%); border-left: 6px solid #22c55e;">
-        <h2 style="font-size: 2.1rem; color: #0f172a;">Build a Certain Future for Your Child</h2>
-        <p style="font-size: 1.1rem; color: #475569; max-width: 750px; margin: 15px auto 25px auto;">
-            We bridge the gap between school exam preparation and long-term foundation goals. Get direct expert intervention to structure your child's learning roadmap.
-        </p>
+    <section id="welcome" style="text-align: center;">
+        <h2>Build a Certain Future for Your Child</h2>
         <a href="payment.html" class="btn-primary" style="display: inline-block; padding: 12px 35px;">Book Strategic Consultation</a>
     </section>
 
-    <!-- ... (baaki content same rahega) ... -->
-
-    <!-- Updated Pricing Section -->
     <section id="pricing">
-        <h2 style="text-align: center; font-size: 1.6rem; color: #0f172a;">Strategic Guidance Programs</h2>
-        <p style="text-align: center; color: #64748b; margin-bottom: 25px;">Select the dynamic engagement level that matches your academic requirements.</p>
-        <div class="force-table" style="max-width: 960px; margin: 0 auto;">
+        <h2 style="text-align: center;">Strategic Guidance Programs</h2>
+        <div class="force-table" style="max-width: 960px; margin: 20px auto 0;">
             <div class="force-cell-50">
-                <div class="card-box" style="padding: 30px 20px; margin-bottom: 20px;">
-                    <h3 style="font-size: 1.3rem; color: #0f172a; text-align: center;">1-on-1 Strategy Session</h3>
-                    <div style="font-size: 2.4rem; font-weight: 800; color: #1e293b; text-align: center; margin: 15px 0;">₹200</div>
-                    <p style="color: #64748b; text-align: center; font-size: 0.9rem; margin-bottom: 20px;">Dedicated Parent-Counsellor Call</p>
-                    <ul style="list-style: none; color: #475569; font-size: 0.9rem; padding: 0 10px;">
-                        <li style="margin-bottom: 10px;">✓ <b>Parent-Counsellor Connect:</b> Deep-dive strategy call</li>
-                        <li style="margin-bottom: 10px;">✓ <b>Maths & Science Roadmap:</b> Subject developmental layout</li>
-                        <li style="margin-bottom: 10px;">✓ <b>School vs Foundation:</b> Systems to balance regular exams</li>
-                    </ul>
+                <div class="card-box">
+                    <h3>1-on-1 Strategy Session</h3>
+                    <div style="font-size: 2.4rem; font-weight: 800; margin: 15px 0;">₹200</div>
                     <a href="payment.html" class="btn-primary" style="background: #475569;">Book Session</a>
                 </div>
             </div>
             <div class="force-cell-50">
-                <div class="card-box featured" style="padding: 30px 20px; background: #ffffff;">
-                    <div style="text-align: center; margin-bottom: 5px;"><span style="background: #2563eb; color: white; font-size: 0.75rem; font-weight: 700; padding: 3px 10px; border-radius: 10px; text-transform: uppercase;">Most Popular</span></div>
-                    <h3 style="font-size: 1.3rem; color: #0f172a; text-align: center;">Complete Plan of Action</h3>
-                    <div style="font-size: 2.4rem; color: #2563eb; font-weight: 800; text-align: center; margin: 15px 0;">Starts at ₹999</div>
-                    <p style="color: #64748b; text-align: center; font-size: 0.9rem; margin-bottom: 20px;">End-to-End Future Growth Mentorship</p>
-                    <ul style="list-style: none; color: #475569; font-size: 0.9rem; padding: 0 10px;">
-                        <li style="margin-bottom: 10px;">✓ <b>Custom Future POA:</b> Comprehensive structural milestones</li>
-                        <li style="margin-bottom: 10px;">✓ <b>Advanced Assessment:</b> Diagnostics targeting core strengths</li>
-                        <li style="margin-bottom: 10px;">✓ <b>Best Coaching Selection:</b> Data optimization based on budget</li>
-                        <li style="margin-bottom: 10px;">✓ <b>Regular Parent Alignment:</b> Long term performance tracking</li>
-                    </ul>
+                <div class="card-box">
+                    <h3>Complete Plan of Action</h3>
+                    <div style="font-size: 2.4rem; font-weight: 800; margin: 15px 0; color: #2563eb;">₹999</div>
                     <a href="payment.html" class="btn-primary">Enquire Now</a>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- ... (Baaki code same rahega) ... -->
-
 </div>
 
 </body>
