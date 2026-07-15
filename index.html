@@ -254,6 +254,33 @@
             gap: 10px;
         }
 
+        /* About Us Section Styles */
+        .about-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin-top: 20px;
+        }
+        
+        .about-image img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 16px;
+            border: 4px solid #f1f5f9;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-text h3 {
+            font-size: 1.5rem;
+            color: #1e40af;
+            margin-bottom: 10px;
+        }
+
         /* Pricing Specifics */
         .pricing-card.popular {
             border: 2px solid #2563eb;
@@ -382,6 +409,14 @@
                 grid-template-columns: 1fr;
                 gap: 20px;
             }
+            .about-wrapper {
+                flex-direction: column;
+                text-align: center;
+            }
+            .about-image img {
+                width: 200px;
+                height: 200px;
+            }
         }
     </style>
 </head>
@@ -407,7 +442,7 @@
         </ul>
     </nav>
 
-    <!-- Professional Hero Header Section (With alignment fix) -->
+    <!-- Professional Hero Header Section -->
     <header id="home">
         <div class="header-container">
             <div class="header-content">
@@ -416,7 +451,7 @@
                 <a href="#contact" class="btn">Book Strategic Consultation</a>
             </div>
             <div class="header-image">
-                <img src="https://images.unsplash.com/photo-1592009309602-1dde752490ae?auto=format&fit=crop&q=80&w=600" alt="Student smiling">
+                <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=600" alt="Student learning confidently">
             </div>
         </div>
     </header>
@@ -533,37 +568,52 @@
             </div>
         </section>
 
+        <!-- Meet the Counselor (About Section) -->
+        <section>
+            <h2>Meet Your Counselor</h2>
+            <div class="about-wrapper">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400" alt="YK Founder Counselor">
+                </div>
+                <div class="about-text">
+                    <h3>Hi, I'm YK</h3>
+                    <p style="margin-bottom: 12px; color: #475569;">My goal is simple: to help parents make informed, budget-friendly, and highly effective academic choices for their children. Having worked with hundreds of families, I understand the anxiety around choosing the right streams, coaching centers, and foundation roadmaps.</p>
+                    <p style="color: #475569;">We don't offer generic advice. Every recommendation is backed by deep analysis of your child's capabilities and your family goals, ensuring a clear path to success.</p>
+                </div>
+            </div>
+        </section>
+
         <!-- Frequently Asked Questions -->
         <section id="faq">
             <h2>Frequently Asked Questions</h2>
             <div style="margin-top: 25px;">
                 <div class="faq-item">
                     <h4>Is a foundation course configuration optimal for students in classes 6th to 10th?</h4>
-                    <p>Balancing baseline performance parameters and analytical depth is essential. Early introduction to foundation methodology establishes key analytical capabilities for upcoming metrics like JEE, NEET, or competitive science assessments.</p>
+                    <p>Balancing school exam performance and deep analytical understanding is essential. Early introduction to foundation methodology builds strong analytical habits for JEE, NEET, and other competitive examinations.</p>
                 </div>
                 <div class="faq-item">
-                    <h4>Do you offer specialized tuition platform mapping services based on custom budgets?</h4>
-                    <p>Yes. We perform complete cost-benefit optimizations across leading digital systems and classic academic coaching structures to secure maximum value for your educational operating allocation.</p>
+                    <h4>Do you help us choose the best coaching or tuition platform within our budget?</h4>
+                    <p>Yes, absolutely. We do a thorough cost-benefit analysis of leading online platforms and traditional coaching systems to match the best option with your personal budget.</p>
                 </div>
             </div>
         </section>
 
         <!-- Initiate Strategic Academic Execution (Contact Section) -->
         <section id="contact">
-            <h2 style="display: block; text-align: center; margin-bottom: 15px;">Initiate Strategic Academic Execution</h2>
-            <p style="text-align: center; color: #64748b;">Complete the basic submission form below or open an active dialogue terminal directly via WhatsApp.</p>
+            <h2 style="display: block; text-align: center; margin-bottom: 15px;">Take the First Step Today</h2>
+            <p style="text-align: center; color: #64748b;">Fill out our quick details form or connect directly with us on WhatsApp to get started.</p>
             
             <div class="contact-box">
                 <div class="contact-method">
                     <span style="font-size: 2rem;">📝</span>
                     <h4 style="margin: 10px 0;">Submit Information Profile</h4>
-                    <p style="font-size: 0.85rem; color: #64748b;">Share your child's goals, coaching, streams, or foundation steps to get custom options within 24 hours.</p>
+                    <p style="font-size: 0.85rem; color: #64748b;">Share your child's goals, current classes, and budget to get custom-matched options within 24 hours.</p>
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLScAKR_VrcY7DbjUxTTKUwyeqzzdaH-_EuoSWJuYoCnhoSnPCw/viewform" target="_blank" class="btn" style="background: #0f172a;">Open Google Form</a>
                 </div>
                 <div class="contact-method">
                     <span style="font-size: 2rem;">💬</span>
                     <h4 style="margin: 10px 0;">Instant WhatsApp Connector</h4>
-                    <p style="font-size: 0.85rem; color: #64748b;">Skip waiting response times and connect immediately with our consultant workspace.</p>
+                    <p style="font-size: 0.85rem; color: #64748b;">Skip waiting response times and start an instant direct chat with our support team.</p>
                     <a href="https://wa.me/918679156709" class="btn" style="background: #22c55e; border-color: #22c55e;">Connect Now</a>
                 </div>
             </div>
