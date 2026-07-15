@@ -22,11 +22,19 @@
             line-height: 1.6;
         }
 
-        /* Premium Brand Header (Side-by-Side Layout Like Infinity Learn) */
+        /* Premium Brand Header (With Constrained Container to prevent drifting) */
         header {
             background: linear-gradient(135deg, #0f172a 0%, #1e40af 100%);
             color: white;
-            padding: 80px 5%;
+            padding: 80px 0;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .header-container {
+            width: 90%;
+            max-width: 1100px; /* Aligns perfectly with the content below */
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -35,7 +43,6 @@
 
         .header-content {
             flex: 1.2;
-            max-width: 650px;
         }
 
         .header-content h1 {
@@ -359,7 +366,7 @@
 
         /* Responsive styling */
         @media (max-width: 900px) {
-            header {
+            .header-container {
                 flex-direction: column;
                 text-align: center;
                 padding: 50px 20px;
@@ -400,16 +407,17 @@
         </ul>
     </nav>
 
-    <!-- Professional Hero Header Section -->
+    <!-- Professional Hero Header Section (With alignment fix) -->
     <header id="home">
-        <div class="header-content">
-            <h1>Build a Certain Future for Your <span style="color: #60a5fa;">Child</span></h1>
-            <p>We bridge the gap between school exam preparation and long-term foundation goals. Get direct expert intervention to structure your child's learning roadmap.</p>
-            <a href="#contact" class="btn">Book Strategic Consultation</a>
-        </div>
-        <div class="header-image">
-            <!-- Yeh premium online photo automatic perfect layout mein dikhegi -->
-            <img src="https://images.unsplash.com/photo-1592009309602-1dde752490ae?auto=format&fit=crop&q=80&w=600" alt="Student smiling">
+        <div class="header-container">
+            <div class="header-content">
+                <h1>Build a Certain Future for Your <span style="color: #60a5fa;">Child</span></h1>
+                <p>We bridge the gap between school exam preparation and long-term foundation goals. Get direct expert intervention to structure your child's learning roadmap.</p>
+                <a href="#contact" class="btn">Book Strategic Consultation</a>
+            </div>
+            <div class="header-image">
+                <img src="https://images.unsplash.com/photo-1592009309602-1dde752490ae?auto=format&fit=crop&q=80&w=600" alt="Student smiling">
+            </div>
         </div>
     </header>
 
